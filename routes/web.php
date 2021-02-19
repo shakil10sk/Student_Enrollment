@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('studentlogin');
 });
+Route::get('/adminlogin/create','Admin\AdminController@create');
+Route::post('/adminlogin','Admin\AdminController@store');
+
